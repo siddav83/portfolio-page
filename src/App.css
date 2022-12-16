@@ -1,4 +1,8 @@
 .App {
+  color: white;
+  z-index: 1000;
+  background-image: url(stars.jpeg);
+  background-color: red;
   text-align: center;
 }
 
