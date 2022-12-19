@@ -11,8 +11,8 @@ export const Projects = ({ project }) => {
             <Box
                 sx={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)" }}
             >
-                {repoData.map((project) => {
-                    return <ProjectCard project={project} />;
+                {repoData.map((project, i) => {
+                    return <ProjectCard project={project} key={i} />;
                 })}
             </Box>
         </div>

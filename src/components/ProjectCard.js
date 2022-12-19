@@ -20,12 +20,12 @@ export const ProjectCard = ({ project }) => {
                     border: "yellow solid 1px",
                 },
                 transition: "transform 500ms",
-                background: "black",
+                background: "rgba(0, 0, 0, .3)",
                 color: "inherit",
-                maxWidth: 345,
+                maxWidth: 380,
                 m: 2,
                 p: 2,
-                opacity: 0.7,
+                // opacity: 0.6,
             }}
         >
             <i
@@ -38,17 +38,40 @@ export const ProjectCard = ({ project }) => {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Link href={project.projectLink}>
-                    <Button size="small">project</Button>
+                <Link
+                    href={project.projectLink}
+                    sx={{ textDecoration: "none" }}
+                >
+                    <Button size="small">
+                        <i
+                            style={{
+                                fontSize: "1.4rem",
+                                color: "white",
+                            }}
+                            className="fa-solid fa-arrow-up-right-from-square"
+                        ></i>
+                    </Button>
                 </Link>
-                <Link href={project.githubLink}>
-                    <Button size="small">github</Button>
+                <Link href={project.githubLink} sx={{ textDecoration: "none" }}>
+                    <Button size="small">
+                        <i
+                            style={{
+                                fontSize: "1.5rem",
+                                color: "white",
+                            }}
+                            className="fa-brands fa-github"
+                        ></i>
+                    </Button>
                 </Link>
             </CardActions>
             <Box sx={{ display: "flex" }}>
                 {project.techno &&
-                    project.techno.map((tec) => {
-                        return <Box sx={{ p: 2, color: "yellow" }}>{tec}</Box>;
+                    project.techno.map((tec, i) => {
+                        return (
+                            <Box key={i} sx={{ p: 2, color: "yellow" }}>
+                                {tec}
+                            </Box>
+                        );
                     })}
             </Box>
         </Card>
