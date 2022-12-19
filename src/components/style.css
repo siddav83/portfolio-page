@@ -1,66 +1,63 @@
 .footer {
-  position: sticky;
-  /* z-index: -1000; */
-  /* position: sticky; */
-  height: 20vh;
-  width: 100%;
-  /* background-color: brown; */
+    position: sticky;
+    height: 20vh;
+    width: 100%;
 }
 
 .navbar {
-  position: fixed;
-  /* height: 90px; */
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  transition: 0.3s ease-in;
-  overflow: hidden;
-  /* background-color: rgba(0, 0, 0, 0.9); */
+    position: fixed;
+    /* height: 90px; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.3s ease-in;
+    overflow: hidden;
 }
 
 .container {
-  position: relative;
-  /* top: 20px; */
-  /* bottom: 15px; */
-  /* position: absolute; */
-  height: 100vh;
-  width: 100%;
-  /* background-color: aquamarine; */
+    padding-left: 15rem;
+    padding-right: 15rem;
+    margin-top: 7rem;
+    margin-right: 10rem;
+    position: relative;
+    height: 100vh;
+    width: 100%;
 }
 
 .left {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  z-index: 100;
-  width: 7%;
-  height: 100vh;
-  /* background-color: blueviolet; */
-  /* position: absolute; */
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 10%;
+    height: 100vh;
 }
 
 .left-icon {
-  padding: 10px;
-  margin-top: 20px;
-  margin-left: 30px;
-  margin-bottom: 20px;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-bottom: 20px;
 }
 
 .right {
-  z-index: 100;
-  top: 0;
-  right: 0;
-  width: 7%;
-  height: 220%;
-  /* background-color: pink; */
-  position: absolute;
+    position: fixed;
+    margin-top: 100px;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 100vh;
 }
 
 .right p {
-  padding: 10px;
-  margin-top: 20px;
-  margin-left: 30px;
-  margin-bottom: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.folder {
+    font-size: 2rem;
 }
