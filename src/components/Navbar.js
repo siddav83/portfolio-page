@@ -69,19 +69,47 @@ export const Navbar = (props) => {
                         }}
                     ></Typography>
                     <Box sx={{ display: { xs: "none", sm: "block" } }}>
-                        <Button sx={{ color: "#fff" }}>
-                            <Link to="home" sx={{ m: 2, color: "red" }}>
-                                Home
-                            </Link>
+                        <Button
+                            sx={{
+                                fontSize: "inherit",
+                                color: "#fff",
+                                textTransform: "capitalize",
+                            }}
+                        >
+                            <Link to="home">Home</Link>
                         </Button>
-                        <Button sx={{ color: "#fff" }}>
+                        <Button
+                            sx={{
+                                fontSize: "inherit",
+                                color: "#fff",
+                                textTransform: "capitalize",
+                            }}
+                        >
                             <Link to="about">About</Link>
                         </Button>
-                        <Button sx={{ color: "#fff" }}>
+                        <Button
+                            sx={{
+                                fontSize: "inherit",
+                                color: "#fff",
+                                textTransform: "capitalize",
+                            }}
+                        >
                             <Link to="projects">Projects</Link>
                         </Button>
-                        <Button sx={{ color: "#fff" }}>
-                            <Link to="contact" sx={{ color: "#fff" }}>
+                        <Button
+                            sx={{
+                                fontSize: "inherit",
+                                color: "#fff",
+                                textTransform: "capitalize",
+                            }}
+                        >
+                            <Link
+                                to="contact"
+                                sx={{
+                                    color: "#fff",
+                                    textTransform: "capitalize",
+                                }}
+                            >
                                 Contact
                             </Link>
                         </Button>

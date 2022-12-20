@@ -20,7 +20,7 @@ export const Home = () => {
                 Hello there, I'm
             </Typography>
             <Typography
-                sx={{ alignSelf: "flex-start" }}
+                sx={{ alignSelf: "flex-start", fontWeight: "900" }}
                 variant="h1"
                 component="div"
             >

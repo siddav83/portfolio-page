@@ -1,5 +1,8 @@
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, Link } from "@mui/material";
+
+const mailtoHref =
+    "mailto:siddav83@gmail.com?subject=SendMail&body=Description";
 
 export const Right = () => {
     return (
@@ -10,14 +13,16 @@ export const Right = () => {
                 sx={{
                     pl: "15rem",
                     pt: 15,
-                    // pr: 30,
+
                     fontSize: "1rem",
                     letterSpacing: "3px",
-                    color: "#F7E914",
+                    color: "white",
                     transform: "rotate(90deg)",
                 }}
             >
-                SIDDAV83@GMAIL.COM
+                <a href={mailtoHref} className="btn btn-danger">
+                    siddav83@gmail.com
+                </a>
             </Box>
         </div>
     );
