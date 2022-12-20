@@ -29,7 +29,7 @@ export default function About() {
                         Hello! I'm Dave, a full-stack developer from Cape Town,
                         South Africa. I have been living London, UK since 2018.
                         I am eager learner and keeping up to date with the
-                        latest technologies. using Javascript and React as my
+                        latest technologies. Using Javascript and React as my
                         primary coding languages. I am a recent graduate at
                         Futureproof and Le Wagon.
                     </Typography>
@@ -39,10 +39,10 @@ export default function About() {
                         sx={{ wordSpacing: "0.5px" }}
                     >
                         I’m passionate about web development and using what I
-                        have learnt to help solve problems. Currently upskilling
-                        myself in Next.js in order to incorporate SEO into my
-                        web base projects and make my webpages more SEO
-                        friendly.
+                        have learnt to help solve problems through code.
+                        Currently upskilling myself in Next.js in order to
+                        incorporate SEO into my web base projects and make my
+                        webpages SEO friendly.
                     </Typography>
 
                     <Typography
