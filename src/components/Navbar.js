@@ -71,33 +71,73 @@ export const Navbar = (props) => {
                     <Box sx={{ display: { xs: "none", sm: "block" } }}>
                         <Button
                             sx={{
+                                "&:hover": {
+                                    p: "1rem",
+                                    borderBottom: "3px solid #f1d64f",
+                                },
                                 fontSize: "inherit",
                                 color: "#fff",
                                 textTransform: "capitalize",
                             }}
                         >
-                            <Link to="home">Home</Link>
+                            <Link
+                                to="home"
+                                spy={true}
+                                smooth={true}
+                                offset={-100}
+                                duration={500}
+                            >
+                                Home
+                            </Link>
                         </Button>
                         <Button
                             sx={{
+                                "&:hover": {
+                                    p: "1rem",
+                                    borderBottom: "3px solid #f1d64f",
+                                },
                                 fontSize: "inherit",
                                 color: "#fff",
                                 textTransform: "capitalize",
                             }}
                         >
-                            <Link to="about">About</Link>
+                            <Link
+                                to="about"
+                                spy={true}
+                                smooth={true}
+                                offset={-100}
+                                duration={500}
+                            >
+                                About
+                            </Link>
                         </Button>
                         <Button
                             sx={{
+                                "&:hover": {
+                                    p: "1rem",
+                                    borderBottom: "3px solid #f1d64f",
+                                },
                                 fontSize: "inherit",
                                 color: "#fff",
                                 textTransform: "capitalize",
                             }}
                         >
-                            <Link to="projects">Projects</Link>
+                            <Link
+                                to="projects"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                Projects
+                            </Link>
                         </Button>
                         <Button
                             sx={{
+                                "&:hover": {
+                                    p: "1rem",
+                                    borderBottom: "3px solid #f1d64f",
+                                },
                                 fontSize: "inherit",
                                 color: "#fff",
                                 textTransform: "capitalize",
@@ -105,12 +145,41 @@ export const Navbar = (props) => {
                         >
                             <Link
                                 to="contact"
+                                spy={true}
+                                smooth={true}
+                                offset={110}
+                                duration={500}
                                 sx={{
                                     color: "#fff",
                                     textTransform: "capitalize",
                                 }}
                             >
                                 Contact
+                            </Link>
+                        </Button>
+                        <Button
+                            sx={{
+                                "&:hover": {
+                                    p: "1rem",
+                                    borderBottom: "3px solid #f1d64f",
+                                },
+                                fontSize: "inherit",
+                                color: "#fff",
+                                textTransform: "capitalize",
+                            }}
+                        >
+                            <Link
+                                to="contact"
+                                spy={true}
+                                smooth={true}
+                                offset={50}
+                                duration={500}
+                                sx={{
+                                    color: "#fff",
+                                    textTransform: "capitalize",
+                                }}
+                            >
+                                Resume
                             </Link>
                         </Button>
                     </Box>

@@ -1,37 +1,33 @@
 export const repoData = [
     {
-        name: "Monastery - Habit Tracking App",
-        techno: ["javascript", "css", "html", "jest"],
+        name: "Habit Tracking App",
+        snippet:
+            "An app that tracks your daily habits, keeps score of daily and weeklystreaks. User is able to add, remove and edit habits",
+        techno: ["Javascript", "CSS", "HTML", "Jest"],
         githubLink: "https://github.com/kaiyuleung/Lap_2_Project_Monastery",
         projectLink: "https://monasteri.netlify.app/",
     },
     {
-        name: "Mandemzmadquiz - Trivia App",
-        techno: ["react", "socket.io", "Cypress"],
+        name: "Trivia App",
+        snippet:
+            "An app where you are able to play a trivia game against your friends or family. User is able to select different categories and difficulties, multiple players can me added to the game.",
+        techno: ["React", "Socket.io", "Cypress"],
         githubLink: "https://github.com/Brendan-Geoghegan/Lap3_Project",
         projectLink: "https://mandemzmadquiz.netlify.app/",
     },
     {
-        name: "Happy Holiday - Xmas Shopping App",
-        techno: ["React", "Flask", "Cypress", "Pytest"],
+        name: "Xmas Shopping App",
+        snippet:
+            "An app that where you are able to add friends to view your wish list for Xmas.The user is able to add, items to the wishlist which other friends can view. This can be your wants, dream and dislikes",
+        techno: ["React", "Flask", "Pytest"],
         githubLink: "https://github.com/kaiyuleung/Lap_2_Project_Monastery",
         projectLink: "https://happiholidays.netlify.app/",
     },
     {
-        name: "Monastery-habit tracking App",
-        techno: ["javascript", "css", "html"],
-        githubLink: "https://github.com/kaiyuleung/Lap_2_Project_Monastery",
-        projectLink: "https://monasteri.netlify.app/",
-    },
-    {
-        name: "Monastery-habit tracking App",
-        techno: ["javascript", "css", "html"],
-        githubLink: "https://github.com/kaiyuleung/Lap_2_Project_Monastery",
-        projectLink: "https://monasteri.netlify.app/",
-    },
-    {
         name: "Portfolio Page",
-        techno: ["react", "material-ui"],
+        snippet:
+            "Create a portfolio page build on React and Material-ui to show case my skills and projects as a junior developer. Hope you like what I have put together.",
+        techno: ["React", "Material-UI"],
         githubLink: "https://github.com/siddav83/portfolio-page",
         projectLink: "https://github.com/siddav83/portfolio-page",
     },

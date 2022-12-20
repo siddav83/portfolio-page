@@ -13,7 +13,7 @@ export const Home = () => {
             }}
         >
             <Typography
-                sx={{ alignSelf: "flex-start" }}
+                sx={{ alignSelf: "flex-start", color: "#f1d64f" }}
                 variant="h6"
                 component="div"
             >
@@ -27,7 +27,11 @@ export const Home = () => {
                 David Siddle
             </Typography>
             <Typography
-                sx={{ alignSelf: "flex-start" }}
+                sx={{
+                    alignSelf: "flex-start",
+                    fontWeight: "900",
+                    color: " rgba(156,163,175)",
+                }}
                 variant="p"
                 component="div"
             >
@@ -39,9 +43,9 @@ export const Home = () => {
                 sx={{ alignSelf: "flex-start", maxWidth: 800, pt: 2 }}
             >
                 I'm a Full-Stack developer based in London , specializing in
-                prototyping MVP and designing websites, applications, and
-                everything in between. If i'm not coding you can catch me around
-                Hyde Park running, cycling or swimming. No specific order
+                prototyping MVP and designing websites and somethings in
+                between. If i'm not coding you can catch me around Hyde Park
+                running, cycling or swimming. No specific order.
             </Typography>
         </Box>
     );

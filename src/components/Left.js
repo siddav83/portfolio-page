@@ -6,7 +6,13 @@ export const Left = () => {
         <div className="left" style={{ zIndex: "1000" }}>
             <Link
                 href="https://github.com/siddav83"
-                sx={{ textDecoration: "none" }}
+                sx={{
+                    "&:hover": {
+                        transform: "translateY(-5px)",
+                    },
+                    transition: "transform 500ms",
+                    textDecoration: "none",
+                }}
             >
                 <i
                     style={{ color: "white" }}
@@ -15,7 +21,13 @@ export const Left = () => {
             </Link>
             <Link
                 href="https://www.instagram.com/sons_of_a_butchers/"
-                sx={{ textDecoration: "none" }}
+                sx={{
+                    "&:hover": {
+                        transform: "translateY(-5px)",
+                    },
+                    transition: "transform 500ms",
+                    textDecoration: "none",
+                }}
             >
                 <i
                     style={{ color: "white" }}
@@ -24,7 +36,13 @@ export const Left = () => {
             </Link>
             <Link
                 href="https://www.linkedin.com/in/siddav83/"
-                sx={{ textDecoration: "none" }}
+                sx={{
+                    "&:hover": {
+                        transform: "translateY(-5px)",
+                    },
+                    transition: "transform 500ms",
+                    textDecoration: "none",
+                }}
             >
                 <i
                     style={{ color: "white" }}
@@ -33,7 +51,13 @@ export const Left = () => {
             </Link>
             <Link
                 href="https://twitter.com/daveydawie"
-                sx={{ textDecoration: "none" }}
+                sx={{
+                    "&:hover": {
+                        transform: "translateY(-5px)",
+                    },
+                    transition: "transform 500ms",
+                    textDecoration: "none",
+                }}
             >
                 <i
                     style={{ color: "white" }}
@@ -42,7 +66,13 @@ export const Left = () => {
             </Link>
             <Link
                 href="https://dev.to/siddav83"
-                sx={{ textDecoration: "none" }}
+                sx={{
+                    "&:hover": {
+                        transform: "translateY(-5px)",
+                    },
+                    transition: "transform 500ms",
+                    textDecoration: "none",
+                }}
             >
                 <i
                     style={{ color: "white" }}

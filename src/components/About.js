@@ -9,13 +9,15 @@ export default function About() {
                 component="div"
                 sx={{
                     display: "flex",
-                    // p: 0,
-                    // m: 0,
                     justifyContent: "center",
                 }}
             >
                 <Box sx={{ maxWidth: "40rem", wordSpacing: "2px" }}>
-                    <Typography component="div" variant="h4" sx={{ pb: 2 }}>
+                    <Typography
+                        component="div"
+                        variant="h3"
+                        sx={{ pb: 2, fontWeight: "800" }}
+                    >
                         About Dave
                     </Typography>
 
@@ -25,30 +27,31 @@ export default function About() {
                         sx={{ wordSpacing: "0.5px" }}
                     >
                         Hello! I'm Dave, a full-stack developer from Cape Town,
-                        South Africa now living in London, UK . I enjoy creating
-                        things that live on the internet, whether they be
-                        websites, applications, or anything in between. Recent
-                        graduate at futureproof.
+                        South Africa. I have been living London, UK since 2018.
+                        I am eager learner and keeping up to date with the
+                        latest technologies. using Javascript and React as my
+                        primary coding languages. I am a recent graduate at
+                        Futureproof and Le Wagon.
                     </Typography>
                     <Typography
                         component="div"
                         variant="p"
                         sx={{ wordSpacing: "0.5px" }}
                     >
-                        I’m passionate about making the web accessible to
-                        everyone and I enjoy solving complex problems using web
-                        technologies. I am always eager to learn new things
-                        every day and keep up with the new technologies. I work
-                        on a wide variety of interesting and meaningful projects
-                        on a daily basis
+                        I’m passionate about web development and using what I
+                        have learnt to help solve problems. Currently upskilling
+                        myself in Next.js in order to incorporate SEO into my
+                        web base projects and make my webpages more SEO
+                        friendly.
                     </Typography>
+
                     <Typography
                         component="div"
                         variant="p"
                         sx={{ wordSpacing: "0.5px" }}
                     >
                         My goal is to become a well rounded full-stack developer
-                        working build and supporting a start-up.
+                        to help build and support start-ups to scale.
                     </Typography>
                     <Typography
                         component="div"
@@ -60,11 +63,9 @@ export default function About() {
                     </Typography>
                     <Box
                         sx={{
-                            // width: "30rem",
-                            height: "auto",
+                            width: "30rem",
                             display: "flex",
                             justifyContent: "space-around",
-                            // flexWrap: "wrap;",
                         }}
                     >
                         <i

@@ -5,7 +5,6 @@ import {
     Card,
     CardActions,
     CardContent,
-    Button,
     Typography,
     Link,
 } from "@mui/material/";
@@ -17,12 +16,12 @@ export const ProjectCard = ({ project }) => {
             sx={{
                 "&:hover": {
                     transform: "translateY(-10px)",
-                    border: "yellow solid 1px",
                 },
                 transition: "transform 500ms",
                 background: "rgba(0, 0, 0, .3)",
                 color: "inherit",
-                maxWidth: 380,
+                minWidth: 280,
+                maxWidth: 400,
                 m: 2,
                 p: 2,
                 // opacity: 0.6,
@@ -30,45 +29,47 @@ export const ProjectCard = ({ project }) => {
         >
             <i
                 className="fa-regular fa-folder-open folder"
-                style={{ color: "yellow" }}
+                style={{ color: "#f1d64f", position: "absolute" }}
             ></i>
-            <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                    {project.name}
-                </Typography>
-            </CardContent>
-            <CardActions>
+            <Box sx={{ display: "flex", justifyContent: "end" }}>
                 <Link
                     href={project.projectLink}
                     sx={{ textDecoration: "none" }}
                 >
-                    <Button size="small">
-                        <i
-                            style={{
-                                fontSize: "1.4rem",
-                                color: "white",
-                            }}
-                            className="fa-solid fa-arrow-up-right-from-square"
-                        ></i>
-                    </Button>
+                    <i
+                        style={{
+                            fontSize: "1rem",
+                            color: "white",
+                            margin: "5px",
+                            // justifySelf: "flex-end",
+                        }}
+                        className="fa-solid fa-arrow-up-right-from-square"
+                    ></i>
                 </Link>
                 <Link href={project.githubLink} sx={{ textDecoration: "none" }}>
-                    <Button size="small">
-                        <i
-                            style={{
-                                fontSize: "1.5rem",
-                                color: "white",
-                            }}
-                            className="fa-brands fa-github"
-                        ></i>
-                    </Button>
+                    <i
+                        style={{
+                            fontSize: "1rem",
+                            color: "white",
+                            margin: "5px",
+                            justifySelf: "self-end",
+                        }}
+                        className="fa-brands fa-github"
+                    ></i>
                 </Link>
-            </CardActions>
+            </Box>
+            <CardContent>
+                <Typography gutterBottom variant="h6" component="div">
+                    {project.name}
+                </Typography>
+                <Typography>{project.snippet}</Typography>
+            </CardContent>
+
             <Box sx={{ display: "flex" }}>
                 {project.techno &&
                     project.techno.map((tec, i) => {
                         return (
-                            <Box key={i} sx={{ p: 2, color: "yellow" }}>
+                            <Box key={i} sx={{ p: 2, color: "#f1d64f" }}>
                                 {tec}
                             </Box>
                         );
