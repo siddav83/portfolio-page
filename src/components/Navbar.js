@@ -13,6 +13,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { Link } from "react-scroll";
+import { Link as Linker } from "@mui/material";
 
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Contact"];
@@ -168,19 +169,16 @@ export const Navbar = (props) => {
                                 textTransform: "capitalize",
                             }}
                         >
-                            <Link
-                                to="contact"
-                                spy={true}
-                                smooth={true}
-                                offset={50}
-                                duration={500}
+                            <Linker
+                                href="../static/images/siddav83cv.pdf"
+                                download="davidSiddleCV"
                                 sx={{
                                     color: "#fff",
                                     textTransform: "capitalize",
                                 }}
                             >
                                 Resume
-                            </Link>
+                            </Linker>
                         </Button>
                     </Box>
                 </Toolbar>
