@@ -8,8 +8,6 @@ export const Contact = () => {
             className="container contact"
             id="contact"
             style={{
-                maxHeight: "10%",
-                // margin: 0,
                 padding: 0,
                 display: "flex",
                 flexDirection: "column",

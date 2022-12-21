@@ -1,8 +1,10 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 
 export const Home = () => {
+    const mailtoHref =
+        "mailto:siddav83@gmail.com?subject=SendMail&body=Description";
     return (
         <Box
             className="container home"
@@ -47,6 +49,35 @@ export const Home = () => {
                 between. If i'm not coding you can catch me around Hyde Park
                 running, cycling or swimming. No specific order.
             </Typography>
+            <Button
+                sx={{
+                    "&:hover": {
+                        transform: "translateY(-10px)",
+                        backgroundColor: "#f1d64f",
+                        border: "solid #f1d64f 1px",
+                        color: "white",
+                    },
+                    maxWidth: "9rem",
+
+                    transition: "transform 500ms",
+                    mt: 2,
+                    border: "solid #f1d64f 1px",
+                    fontSize: "inherit",
+                    color: "#f1d64f",
+
+                    textTransform: "capitalize",
+                }}
+            >
+                <a
+                    href={mailtoHref}
+                    style={{
+                        color: "inherit",
+                        textDecoration: "none",
+                    }}
+                >
+                    Get in Touch
+                </a>
+            </Button>
         </Box>
     );
 };

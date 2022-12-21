@@ -3,7 +3,7 @@ export const repoData = [
         name: "Habit Tracking App",
         snippet:
             "An app that tracks your daily habits, keeps score of daily and weeklystreaks. User is able to add, remove and edit habits",
-        techno: ["Javascript", "CSS", "HTML", "Jest"],
+        techno: ["Javascript", "CSS", "Jest"],
         githubLink: "https://github.com/kaiyuleung/Lap_2_Project_Monastery",
         projectLink: "https://monasteri.netlify.app/",
     },

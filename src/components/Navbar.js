@@ -72,10 +72,11 @@ export const Navbar = (props) => {
                         <Button
                             sx={{
                                 "&:hover": {
-                                    p: "1rem",
-                                    borderBottom: "3px solid #f1d64f",
+                                    color: "#f1d64f",
                                 },
                                 fontSize: "inherit",
+
+                                m: 1.5,
                                 color: "#fff",
                                 textTransform: "capitalize",
                             }}
@@ -93,10 +94,11 @@ export const Navbar = (props) => {
                         <Button
                             sx={{
                                 "&:hover": {
-                                    p: "1rem",
-                                    borderBottom: "3px solid #f1d64f",
+                                    color: "#f1d64f",
                                 },
                                 fontSize: "inherit",
+
+                                m: 1.5,
                                 color: "#fff",
                                 textTransform: "capitalize",
                             }}
@@ -114,11 +116,12 @@ export const Navbar = (props) => {
                         <Button
                             sx={{
                                 "&:hover": {
-                                    p: "1rem",
-                                    borderBottom: "3px solid #f1d64f",
+                                    color: "#f1d64f",
                                 },
                                 fontSize: "inherit",
                                 color: "#fff",
+
+                                m: 1.5,
                                 textTransform: "capitalize",
                             }}
                         >
@@ -135,11 +138,12 @@ export const Navbar = (props) => {
                         <Button
                             sx={{
                                 "&:hover": {
-                                    p: "1rem",
-                                    borderBottom: "3px solid #f1d64f",
+                                    color: "#f1d64f",
                                 },
                                 fontSize: "inherit",
                                 color: "#fff",
+                                m: 1.5,
+                                mr: 2.5,
                                 textTransform: "capitalize",
                             }}
                         >
@@ -147,7 +151,7 @@ export const Navbar = (props) => {
                                 to="contact"
                                 spy={true}
                                 smooth={true}
-                                offset={110}
+                                offset={100}
                                 duration={500}
                                 sx={{
                                     color: "#fff",
@@ -157,30 +161,23 @@ export const Navbar = (props) => {
                                 Contact
                             </Link>
                         </Button>
+
                         <Button
                             sx={{
                                 "&:hover": {
-                                    p: "1rem",
-                                    borderBottom: "3px solid #f1d64f",
+                                    color: "white",
+                                    backgroundColor: "#f1d64f",
                                 },
                                 fontSize: "inherit",
-                                color: "#fff",
+                                border: "2px solid #f1d64f",
+                                p: "0.5rem",
+                                color: "#f1d64f",
                                 textTransform: "capitalize",
                             }}
+                            href="siddav83cv.pdf"
+                            download="siddav83cv.pdf"
                         >
-                            <Link
-                                to="contact"
-                                spy={true}
-                                smooth={true}
-                                offset={50}
-                                duration={500}
-                                sx={{
-                                    color: "#fff",
-                                    textTransform: "capitalize",
-                                }}
-                            >
-                                Resume
-                            </Link>
+                            Resume
                         </Button>
                     </Box>
                 </Toolbar>
