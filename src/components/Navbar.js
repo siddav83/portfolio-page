@@ -13,7 +13,6 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { Link } from "react-scroll";
-import { Link as Linker } from "@mui/material";
 
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Contact"];
@@ -73,10 +72,11 @@ export const Navbar = (props) => {
                         <Button
                             sx={{
                                 "&:hover": {
-                                    p: "1rem",
-                                    borderBottom: "3px solid #f1d64f",
+                                    color: "#f1d64f",
                                 },
                                 fontSize: "inherit",
+
+                                m: 1.5,
                                 color: "#fff",
                                 textTransform: "capitalize",
                             }}
@@ -94,10 +94,11 @@ export const Navbar = (props) => {
                         <Button
                             sx={{
                                 "&:hover": {
-                                    p: "1rem",
-                                    borderBottom: "3px solid #f1d64f",
+                                    color: "#f1d64f",
                                 },
                                 fontSize: "inherit",
+
+                                m: 1.5,
                                 color: "#fff",
                                 textTransform: "capitalize",
                             }}
@@ -115,11 +116,12 @@ export const Navbar = (props) => {
                         <Button
                             sx={{
                                 "&:hover": {
-                                    p: "1rem",
-                                    borderBottom: "3px solid #f1d64f",
+                                    color: "#f1d64f",
                                 },
                                 fontSize: "inherit",
                                 color: "#fff",
+
+                                m: 1.5,
                                 textTransform: "capitalize",
                             }}
                         >
@@ -136,11 +138,12 @@ export const Navbar = (props) => {
                         <Button
                             sx={{
                                 "&:hover": {
-                                    p: "1rem",
-                                    borderBottom: "3px solid #f1d64f",
+                                    color: "#f1d64f",
                                 },
                                 fontSize: "inherit",
                                 color: "#fff",
+                                m: 1.5,
+                                mr: 2.5,
                                 textTransform: "capitalize",
                             }}
                         >
@@ -148,7 +151,7 @@ export const Navbar = (props) => {
                                 to="contact"
                                 spy={true}
                                 smooth={true}
-                                offset={110}
+                                offset={100}
                                 duration={500}
                                 sx={{
                                     color: "#fff",
@@ -158,27 +161,23 @@ export const Navbar = (props) => {
                                 Contact
                             </Link>
                         </Button>
+
                         <Button
                             sx={{
                                 "&:hover": {
-                                    p: "1rem",
-                                    borderBottom: "3px solid #f1d64f",
+                                    color: "white",
+                                    backgroundColor: "#f1d64f",
                                 },
                                 fontSize: "inherit",
-                                color: "#fff",
+                                border: "2px solid #f1d64f",
+                                p: "0.5rem",
+                                color: "#f1d64f",
                                 textTransform: "capitalize",
                             }}
+                            href="siddav83cv.pdf"
+                            download="siddav83cv.pdf"
                         >
-                            <Linker
-                                href="../static/images/siddav83cv.pdf"
-                                download="davidSiddleCV"
-                                sx={{
-                                    color: "#fff",
-                                    textTransform: "capitalize",
-                                }}
-                            >
-                                Resume
-                            </Linker>
+                            Resume
                         </Button>
                     </Box>
                 </Toolbar>
