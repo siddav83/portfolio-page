@@ -4,7 +4,7 @@ import { CardMedia, Box } from "@mui/material";
 
 export default function About() {
     return (
-        <div className="container" id="about">
+        <div className="container about" id="about">
             <Box
                 component="div"
                 sx={{
@@ -12,7 +12,14 @@ export default function About() {
                     justifyContent: "center",
                 }}
             >
-                <Box sx={{ maxWidth: "40rem", wordSpacing: "2px" }}>
+                <Box
+                    sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        maxWidth: "30rem",
+                        wordSpacing: "2px",
+                    }}
+                >
                     <Typography
                         component="div"
                         variant="h3"
@@ -120,8 +127,8 @@ export default function About() {
                     sx={{
                         p: 2,
                         m: 2,
-                        minWidth: "10rem",
-                        minHeight: "15rem",
+                        minWidth: "5rem",
+                        minHeight: "10rem",
                         maxWidth: "20rem",
                         maxHeight: "30rem",
                     }}

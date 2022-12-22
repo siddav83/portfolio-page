@@ -1,4 +1,5 @@
 .footer {
+    margin: 0 auto;
     position: sticky;
     height: 20vh;
     width: 100%;
@@ -60,11 +61,97 @@
     font-size: 2rem;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1100px) {
     .left {
         display: none;
     }
     .right {
         display: none;
     }
+    .container {
+        padding-left: 1rem;
+        padding-right: 2rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+    #projects > div.MuiBox-root.css-rixz5a {
+        display: "grid";
+        grid-template-columns: repeat(2, 1fr);
+        /* padding-top: 10rem; */
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 2rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+    .projects {
+        padding-top: 10rem;
+    }
+    #about > div > img {
+        margin: 0 auto;
+    }
+
+    #projects > div.MuiBox-root.css-rixz5a {
+        display: "grid";
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #about > div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    #about > div > div {
+        margin: auto;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #about > div > div > div:nth-child(2) {
+        padding: 15px;
+        word-spacing: 0;
+        font-size: 1rem;
+    }
+    #about > div > div > div:nth-child(3),
+    div:nth-child(4) {
+        padding: 15px;
+        word-spacing: 0;
+        font-size: 1rem;
+    }
+
+    #about > div > div > div:nth-child(4) {
+        padding: 15px;
+        word-spacing: 0;
+        font-size: 1rem;
+    }
+
+    #about > div > div > div.MuiBox-root.css-tm8k51 {
+        flex-wrap: nowrap;
+    }
+
+    #projects > div.MuiBox-root.css-rixz5a {
+        display: "grid";
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact {
+        /* margin-top: 10rem; */
+    }
+    #about > div > img {
+        display: none;
+        position: absolute;
+    }
+
+    .projects {
+        height: 200vh;
+        padding-top: 5rem;
+    }
+    /* .footer,
+    .contact {
+        display: none;
+    } */
 }

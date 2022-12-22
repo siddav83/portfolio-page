@@ -1,7 +1,5 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
-// import MenuIcon from "@material-ui/icons/Menu";
-import { Menu as MenuIcon } from "@material-ui/icons";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
@@ -16,8 +14,8 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { Link } from "react-scroll";
 
-const drawerWidth = 240;
-const navItems = ["Home", "About", "Contact"];
+const drawerWidth = 150;
+const navItems = ["home", "about", "projects", "contact"];
 
 export const Navbar = (props) => {
     const { window } = props;
@@ -30,16 +28,24 @@ export const Navbar = (props) => {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
             <Typography variant="h6" sx={{ my: 2 }}>
-                MUI
+                Portfolio
             </Typography>
             <Divider />
             <List>
                 {navItems.map((item) => (
-                    <ListItem key={item} disablePadding>
-                        <ListItemButton sx={{ textAlign: "center" }}>
-                            <ListItemText primary={item} />
-                        </ListItemButton>
-                    </ListItem>
+                    <Link
+                        to={item}
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}
+                    >
+                        <ListItem key={item} disablePadding>
+                            <ListItemButton sx={{ textAlign: "center" }}>
+                                <ListItemText primary={item}></ListItemText>
+                            </ListItemButton>
+                        </ListItem>
+                    </Link>
                 ))}
             </List>
         </Box>
@@ -60,7 +66,10 @@ export const Navbar = (props) => {
                         onClick={handleDrawerToggle}
                         sx={{ mr: 2, display: { sm: "none" } }}
                     >
-                        <MenuIcon />
+                        <i
+                            className="fa-solid fa-bars"
+                            style={{ color: "#f1d64f" }}
+                        ></i>
                     </IconButton>
                     <Typography
                         variant="h6"

@@ -2,6 +2,9 @@ import React from "react";
 import { Typography, Box } from "@mui/material";
 import { ProjectCard } from "./ProjectCard";
 import { repoData } from "../data/repoData";
+// import Grid from "@mui/material/Unstable_Grid2";
+import { Scrollbars } from "react-custom-scrollbars-2";
+
 export const Projects = ({ project }) => {
     return (
         <div className="container projects" id="projects">
@@ -28,7 +31,7 @@ export const Projects = ({ project }) => {
                 </a>
                 on github for all other projects I have worked on.
             </Typography>
-
+            {/* <Scrollbars style={{ width: 1000, height: 200 }}> */}
             <Box
                 sx={{
                     display: "grid",
@@ -37,9 +40,14 @@ export const Projects = ({ project }) => {
                 }}
             >
                 {repoData.map((project, i) => {
-                    return <ProjectCard project={project} key={i} />;
+                    return (
+                        <Box xs={4} md={8} key={i}>
+                            <ProjectCard project={project} key={i} />
+                        </Box>
+                    );
                 })}
             </Box>
+            {/* </Scrollbars> */}
         </div>
     );
 };
