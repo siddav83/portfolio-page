@@ -1,5 +1,7 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
+// import MenuIcon from "@material-ui/icons/Menu";
+import { Menu as MenuIcon } from "@material-ui/icons";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
@@ -58,7 +60,7 @@ export const Navbar = (props) => {
                         onClick={handleDrawerToggle}
                         sx={{ mr: 2, display: { sm: "none" } }}
                     >
-                        {/* <MenuIcon /> */}
+                        <MenuIcon />
                     </IconButton>
                     <Typography
                         variant="h6"
