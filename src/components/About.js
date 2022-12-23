@@ -34,11 +34,11 @@ export default function About() {
                         sx={{ wordSpacing: "0.5px" }}
                     >
                         Hello! I'm Dave, a full-stack developer from Cape Town,
-                        South Africa. I have been living London, UK since 2018.
-                        I am eager learner and keeping up to date with the
-                        latest technologies. Using Javascript and React as my
-                        primary coding languages. I am a recent graduate at
-                        Futureproof and Le Wagon.
+                        South Africa. I have been living in London, UK since
+                        2018. I am eager learner and trying to keep up to date
+                        with the latest technologies. Using Javascript and React
+                        as my primary coding languages. I am a recent graduate
+                        at Futureproof and Le Wagon.
                     </Typography>
                     <Typography
                         component="div"
@@ -63,20 +63,25 @@ export default function About() {
                     <Typography
                         component="div"
                         variant="p"
-                        sx={{ pt: 2, pb: 2, wordSpacing: "0.5px" }}
+                        sx={{ p: 2, pb: 2, wordSpacing: "0.5px" }}
                     >
                         Here are a few technologies I've been working with
                         recently.
                     </Typography>
                     <Box
                         sx={{
-                            width: "30rem",
                             display: "flex",
+
+                            flexWrap: "wrap",
                             justifyContent: "space-around",
                         }}
                     >
                         <i
-                            style={{ fontSize: "2rem", p: "20px" }}
+                            style={{
+                                display: "block",
+                                fontSize: "2rem",
+                                p: "20px",
+                            }}
                             className="fa-brands fa-js"
                         ></i>
 
@@ -110,15 +115,15 @@ export default function About() {
                             className="fa-brands fa-python"
                         ></i>
 
-                        <i
+                        {/* <i
                             style={{ fontSize: "2rem" }}
                             className="fa-brands fa-css3"
-                        ></i>
+                        ></i> */}
 
-                        <i
+                        {/* <i
                             style={{ fontSize: "2rem" }}
                             className="fa-brands fa-html5"
-                        ></i>
+                        ></i> */}
                     </Box>
                 </Box>
 

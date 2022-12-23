@@ -17,7 +17,7 @@ export const Contact = () => {
             }}
         >
             <Typography variant="h5">Get in Touch</Typography>
-            <Typography variant="p">
+            <Typography variant="p" sx={{ padding: 1 }}>
                 Let me know if you want to collarate or just want to chat
                 anything about coding, biltong or long distance triathlon.
             </Typography>

@@ -32,7 +32,7 @@ export const Navbar = (props) => {
             </Typography>
             <Divider />
             <List>
-                {navItems.map((item) => (
+                {navItems.map((item, i) => (
                     <Link
                         to={item}
                         spy={true}
@@ -40,7 +40,7 @@ export const Navbar = (props) => {
                         offset={-100}
                         duration={500}
                     >
-                        <ListItem key={item} disablePadding>
+                        <ListItem key={i} disablePadding>
                             <ListItemButton sx={{ textAlign: "center" }}>
                                 <ListItemText primary={item}></ListItemText>
                             </ListItemButton>

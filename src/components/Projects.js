@@ -16,11 +16,19 @@ export const Projects = ({ project }) => {
             >
                 Projects
             </Typography>
-            <Typography variant="p" fontSize={15} sx={{ pb: 6 }}>
+            <Typography
+                variant="p"
+                sx={{
+                    p: 2,
+                    pb: 2,
+                    wordSpacing: "0.5px",
+                }}
+            >
                 Below are the most recent projects I have contributed to. Check
                 out my
-                <a
+                {/* <a
                     style={{
+                        textAlign: "center",
                         textDecoration: "none",
                         margin: 5,
                         color: "#f1d64f",
@@ -28,7 +36,7 @@ export const Projects = ({ project }) => {
                     href="https://github.com/siddav83?tab=repositories"
                 >
                     repo
-                </a>
+                </a> */}
                 on github for all other projects I have worked on.
             </Typography>
             {/* <Scrollbars style={{ width: 1000, height: 200 }}> */}
