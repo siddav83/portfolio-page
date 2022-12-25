@@ -115,6 +115,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .container {
+    height: auto;
+  }
   #about > div > div > div:nth-child(2) {
     padding: 15px;
     word-spacing: 0;
@@ -149,26 +152,18 @@
 
   .projects {
     height: 200vh;
-    padding-top: 5rem;
+    padding-top: 1rem;
   }
 }
 
-@media screen and (max-width: 414px) {
-  .home {
-    margin: 0;
-    height: 70vh;
-  }
-  .about {
-    margin: 0;
-    height: 70vh;
-  }
-
+@media screen and (max-width: 400px) {
   .project {
     margin: 0;
     height: 100vh;
   }
   .contact {
-    height: 15vh;
+    padding-top: 11rem;
+    height: 42vh;
     margin-left: 15px;
     margin-right: 30px;
   }
@@ -178,61 +173,16 @@
   }
 }
 
-@media screen and (max-width: 390px) {
-  .home {
-    /* padding-top: 10rem; */
-    height: 70vh;
-  }
-  .about {
-    /* padding-top: 10rem; */
-    height: 80vh;
-  }
-  #about > div > div > div.MuiBox-root.css-v2pi9l {
-    margin-bottom: 10rem;
-  }
-  .projects {
-    margin: 0;
-    /* padding-top: 10rem; */
-    height: 200vh;
-  }
-  #projects
-    > div.MuiTypography-root.MuiTypography-h3.css-153g3uf-MuiTypography-root {
-    /* padding-bottom: 20px; */
-  }
+@media screen and (max-width: 360px) {
   .contact {
-    margin: 0;
-    height: 35vh;
-    text-align: center;
-  }
-  .footer {
-    height: 15vh;
-    text-align: center;
+    height: 50vh;
+    padding-top: 15rem;
   }
 }
 
-@media screen and (max-width: 450px) {
-  .home {
-    height: 90vh;
-  }
-  .about {
-    height: 100vh;
-  }
-  #about > div > div > div.MuiBox-root.css-v2pi9l {
-    margin-bottom: 10rem;
-  }
-  .projects {
-    margin: 0;
-
-    height: 260vh;
-  }
-
-  .contact {
-    margin: 0;
-    height: 70vh;
-    text-align: center;
-  }
-  .footer {
-    height: 20vh;
-    text-align: center;
-  }
-}
+/* @media screen and (max-width: 375px) {
+  .contact { */
+/* padding-top: 10rem; */
+/* height: 40vh; */
+/* }
+} */

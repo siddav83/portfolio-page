@@ -1,7 +1,8 @@
 .App {
-    color: white;
-    margin: 0;
-    /* z-index: 1000; */
-    background: url("./static/images/melanie-magdalena-VdFkSO3uePI-unsplash.jpeg");
-    background-size: cover;
+  color: white;
+  margin: 0;
+  padding: 0;
+  /* z-index: 1000; */
+  background: url("./static/images/melanie-magdalena-VdFkSO3uePI-unsplash.jpeg");
+  background-size: cover;
 }
