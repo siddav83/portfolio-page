@@ -1,244 +1,238 @@
 .footer {
-    margin: 0 auto;
-    position: sticky;
-    height: 20vh;
-    width: 100%;
+  margin: 0 auto;
+  position: sticky;
+  height: 20vh;
+  width: 100%;
 }
 
 .navbar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    transition: 0.3s ease-in;
-    overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: 0.3s ease-in;
+  overflow: hidden;
 }
 
 .container {
-    z-index: 0;
-    padding-left: 8rem;
-    padding-right: 10rem;
-    margin-top: 7rem;
-    margin-right: 10rem;
-    position: relative;
-    height: 100vh;
-    width: 100%;
+  z-index: 0;
+  padding-left: 8rem;
+  padding-right: 10rem;
+  margin-top: 7rem;
+  margin-right: 10rem;
+  position: relative;
+  height: 100vh;
+  width: 100%;
 }
 
 .left {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    width: 10%;
-    height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  width: 10%;
+  height: 100vh;
 }
 
 .left-icon {
-    font-size: 20px;
-    margin-top: 40px;
-    margin-left: 40%;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-left: 40%;
 }
 
 .right {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 10%;
-    height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10%;
+  height: 100vh;
 }
 
 .right p {
-    padding: 10px;
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-bottom: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
 }
 
 .folder {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 1100px) {
-    .left {
-        display: none;
-    }
-    .right {
-        display: none;
-    }
-    .container {
-        padding-left: 1rem;
-        padding-right: 2rem;
-        margin-top: 1rem;
-        margin-right: 1rem;
-    }
-    #projects > div.MuiBox-root.css-rixz5a {
-        display: "grid";
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .left {
+    display: none;
+  }
+  .right {
+    display: none;
+  }
+  .container {
+    padding-left: 1rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+  #projects > div.MuiBox-root.css-rixz5a {
+    display: "grid";
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .container {
-        padding-left: 1rem;
-        padding-right: 2rem;
-        margin-top: 1rem;
-        margin-right: 1rem;
-    }
-    .projects {
-        padding-top: 10rem;
-    }
-    #about > div > img {
-        margin: 0 auto;
-    }
+  .container {
+    padding-left: 1rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+  .projects {
+    padding-top: 10rem;
+  }
+  #about > div > img {
+    margin: 0 auto;
+  }
 
-    #projects > div.MuiBox-root.css-rixz5a {
-        display: "grid";
-        grid-template-columns: repeat(2, 1fr);
-    }
-    #about > div {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
-    }
-    #about > div > div {
-    }
-    #about
-        > div
-        > div
-        > div.MuiTypography-root.MuiTypography-p.css-1xwi2og-MuiTypography-root {
-        margin: auto;
-        padding-left: 2;
-        margin: 2;
-    }
+  #projects > div.MuiBox-root.css-rixz5a {
+    display: "grid";
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #about > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  #about > div > div {
+  }
+  #about
+    > div
+    > div
+    > div.MuiTypography-root.MuiTypography-p.css-1xwi2og-MuiTypography-root {
+    margin: auto;
+    padding-left: 2;
+    margin: 2;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    #about > div > div > div:nth-child(2) {
-        padding: 15px;
-        word-spacing: 0;
-        font-size: 1rem;
-    }
-    #about > div > div > div:nth-child(3),
-    div:nth-child(4) {
-        padding: 15px;
-        word-spacing: 0;
-        font-size: 1rem;
-    }
+  #about > div > div > div:nth-child(2) {
+    padding: 15px;
+    word-spacing: 0;
+    font-size: 1rem;
+  }
+  #about > div > div > div:nth-child(3),
+  div:nth-child(4) {
+    padding: 15px;
+    word-spacing: 0;
+    font-size: 1rem;
+  }
 
-    #about > div > div > div:nth-child(4) {
-        padding: 15px;
-        word-spacing: 0;
-        font-size: 1rem;
-    }
+  #about > div > div > div:nth-child(4) {
+    padding: 15px;
+    word-spacing: 0;
+    font-size: 1rem;
+  }
 
-    #about > div > div > div.MuiBox-root.css-tm8k51 {
-        flex-wrap: nowrap;
-    }
+  #about > div > div > div.MuiBox-root.css-tm8k51 {
+    flex-wrap: nowrap;
+  }
 
-    #projects > div.MuiBox-root.css-rixz5a {
-        display: "grid";
-        grid-template-columns: repeat(1, 1fr);
-    }
+  #projects > div.MuiBox-root.css-rixz5a {
+    display: "grid";
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-    #about > div > img {
-        display: none;
-        position: absolute;
-    }
+  #about > div > img {
+    display: none;
+    position: absolute;
+  }
 
-    .projects {
-        height: 200vh;
-        padding-top: 5rem;
-    }
+  .projects {
+    height: 200vh;
+    padding-top: 5rem;
+  }
 }
 
 @media screen and (max-width: 414px) {
-    .home {
-        margin: 0;
-        height: 70vh;
-    }
-    .about {
-        margin: 0;
-        height: 70vh;
-    }
+  .home {
+    margin: 0;
+    height: 70vh;
+  }
+  .about {
+    margin: 0;
+    height: 70vh;
+  }
 
-    .project {
-        margin: 0;
-        height: 100vh;
-    }
-    .contact {
-        height: 15vh;
-        margin-left: 15px;
-        margin-right: 30px;
-    }
+  .project {
+    margin: 0;
+    height: 100vh;
+  }
+  .contact {
+    height: 15vh;
+    margin-left: 15px;
+    margin-right: 30px;
+  }
 
-    .footer {
-        height: 15vh;
-    }
+  .footer {
+    height: 15vh;
+  }
 }
 
 @media screen and (max-width: 390px) {
-    .home {
-        /* padding-top: 10rem; */
-        height: 70vh;
-    }
-    .about {
-        /* padding-top: 10rem; */
-        height: 80vh;
-    }
-    #about > div > div > div.MuiBox-root.css-v2pi9l {
-        margin-bottom: 10rem;
-    }
-    .projects {
-        margin: 0;
-        /* padding-top: 10rem; */
-        height: 200vh;
-    }
-    #projects
-        > div.MuiTypography-root.MuiTypography-h3.css-153g3uf-MuiTypography-root {
-        /* padding-bottom: 20px; */
-    }
-    .contact {
-        margin: 0;
-        height: 35vh;
-        text-align: center;
-    }
-    .footer {
-        height: 15vh;
-        text-align: center;
-    }
+  .home {
+    /* padding-top: 10rem; */
+    height: 70vh;
+  }
+  .about {
+    /* padding-top: 10rem; */
+    height: 80vh;
+  }
+  #about > div > div > div.MuiBox-root.css-v2pi9l {
+    margin-bottom: 10rem;
+  }
+  .projects {
+    margin: 0;
+    /* padding-top: 10rem; */
+    height: 200vh;
+  }
+  #projects
+    > div.MuiTypography-root.MuiTypography-h3.css-153g3uf-MuiTypography-root {
+    /* padding-bottom: 20px; */
+  }
+  .contact {
+    margin: 0;
+    height: 35vh;
+    text-align: center;
+  }
+  .footer {
+    height: 15vh;
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 376px) {
-    .home {
-        /* padding-top: 10rem;
-        margin-top: 10rem; */
-        height: 90vh;
-    }
-    .about {
-        /* padding-top: 10rem; */
-        height: 100vh;
-    }
-    #about > div > div > div.MuiBox-root.css-v2pi9l {
-        margin-bottom: 10rem;
-    }
-    .projects {
-        margin: 0;
-        /* padding-top: 10rem; */
-        height: 260vh;
-    }
-    #projects
-        > div.MuiTypography-root.MuiTypography-h3.css-153g3uf-MuiTypography-root {
-        /* padding-bottom: 20px; */
-    }
-    .contact {
-        margin: 0;
-        height: 40vh;
-        text-align: center;
-    }
-    .footer {
-        height: 20vh;
-        text-align: center;
-    }
+@media screen and (max-width: 450px) {
+  .home {
+    height: 90vh;
+  }
+  .about {
+    height: 100vh;
+  }
+  #about > div > div > div.MuiBox-root.css-v2pi9l {
+    margin-bottom: 10rem;
+  }
+  .projects {
+    margin: 0;
+
+    height: 260vh;
+  }
+
+  .contact {
+    margin: 0;
+    height: 70vh;
+    text-align: center;
+  }
+  .footer {
+    height: 20vh;
+    text-align: center;
+  }
 }
