@@ -6,56 +6,55 @@ import { repoData } from "../data/repoData";
 import { Scrollbars } from "react-custom-scrollbars-2";
 
 export const Projects = ({ project }) => {
-    return (
-        <div className="container projects" id="projects">
-            <Typography
-                component="div"
-                variant="h3"
-                // fontSize={30}
-                fontWeight={800}
-            >
-                Projects
-            </Typography>
-            <Typography
-                variant="p"
-                sx={{
-                    p: 2,
-                    pb: 2,
-                    wordSpacing: "0.5px",
-                }}
-            >
-                Below are the most recent projects I have contributed to. Check
-                out my
-                {/* <a
-                    style={{
-                        textAlign: "center",
-                        textDecoration: "none",
-                        margin: 5,
-                        color: "#f1d64f",
-                    }}
-                    href="https://github.com/siddav83?tab=repositories"
-                >
-                    repo
-                </a> */}
-                on github for all other projects I have worked on.
-            </Typography>
-            {/* <Scrollbars style={{ width: 1000, height: 200 }}> */}
-            <Box
-                sx={{
-                    display: "grid",
-                    gridTemplateColumns: "repeat(3, 1fr)",
-                    pt: 5,
-                }}
-            >
-                {repoData.map((project, i) => {
-                    return (
-                        <Box xs={4} md={8} key={i}>
-                            <ProjectCard project={project} key={i} />
-                        </Box>
-                    );
-                })}
+  return (
+    <div className="container projects" id="projects">
+      <Typography
+        component="div"
+        variant="h3"
+        // fontSize={30}
+        fontWeight={800}
+      >
+        Projects
+      </Typography>
+      <Typography
+        variant="p"
+        sx={{
+          p: 2,
+          pb: 2,
+          wordSpacing: "0.5px",
+        }}
+      >
+        Below are the most recent projects I have contributed to. Check out my
+        <a
+          style={{
+            textAlign: "center",
+            textDecoration: "none",
+            margin: 5,
+            color: "#f1d64f",
+          }}
+          href="https://github.com/siddav83?tab=repositories"
+        >
+          repo
+        </a>
+        on github for all other projects I have worked on.
+      </Typography>
+      {/* <Scrollbars style={{ width: 1000, height: 200 }}> */}
+      <Box
+        sx={{
+          display: "grid",
+          gridTemplateColumns: "repeat(3, 1fr)",
+          pt: 5,
+        }}
+      >
+        {repoData.map((project, i) => {
+          return (
+            <Box xs={4} md={8} key={i}>
+              <ProjectCard project={project} key={i} />
             </Box>
-            {/* </Scrollbars> */}
-        </div>
-    );
+          );
+        })}
+      </Box>
+      {/* </Scrollbars> */}
+    </div>
+  );
 };
